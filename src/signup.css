@@ -1,0 +1,9 @@
+.regis{
+    margin-top: 150px;
+    border: 1 solid color( red green rgb(255, 255, 255));
+    background-color: aliceblue;
+}
+
+body{
+    background-color: blue;
+}
