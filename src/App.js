@@ -2,22 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const student=[{rollno:1,gender:'male'},
+    {rollno:2,gender:'female'},
+    {rollno:3,gender:'male'},
+    {rollno:4,gender:'female'},
+    {rollno:5,gender:'male'}];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <ol>
+      {
+        student.map((item,index)=><li key={index}>{item.age}</li>)
+      }
+      </ol>
     </div>
   );
 }
